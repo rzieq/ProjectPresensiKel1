@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "887313035635",
+    "project_id": "projectakhirkel1",
+    "storage_bucket": "projectakhirkel1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887313035635:android:91303b1413f83a4ce35506",
+        "android_client_info": {
+          "package_name": "com.example.projectpresensikel1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoNKUq0GUFmYi6paKdGkVASJL8nXEA9-4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

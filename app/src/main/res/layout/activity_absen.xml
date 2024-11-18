@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp" >
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Presensi Siswa"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp" />
+
+    <EditText
+        android:id="@+id/locationInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lokasi (Otomatis diisi)"
+        android:focusable="false"
+        android:background="@android:color/transparent"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <ImageView
+        android:id="@+id/photoPreview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:background="#E0E0E0"
+        android:contentDescription="Preview Foto Presensi"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnCapturePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ambil Foto"
+        android:layout_marginBottom="16dp" />
+
+    <RadioGroup
+        android:id="@+id/statusRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioHadir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hadir" />
+
+        <RadioButton
+            android:id="@+id/radioSakit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sakit" />
+
+        <RadioButton
+            android:id="@+id/radioIzin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Izin" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSubmitAttendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kirim Presensi" />
+
+</LinearLayout>
