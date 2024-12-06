@@ -9,11 +9,22 @@
     android:padding="16dp"
     tools:context=".HistoryActivity">
 
+    <ImageButton
+        android:id="@+id/btnBack2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="Back"
+        android:src="@drawable/ic_arrow_back" />
+
     <TextView
         android:id="@+id/tvHistoryTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Riwayat Absensi"
+        android:text="Riwayat Presensi"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_gravity="center_horizontal"

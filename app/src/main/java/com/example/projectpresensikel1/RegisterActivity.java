@@ -60,8 +60,10 @@ public class RegisterActivity extends AppCompatActivity {
                             // Save user data to Firestore
                             db.collection("users").document(userId)
                                     .set(user)
-                                    .addOnSuccessListener(aVoid ->
-                                            Toast.makeText(this, "Registrasi Berhasil!", Toast.LENGTH_SHORT).show()
+                                    .addOnSuccessListener(aVoid -> {
+                                                Toast.makeText(this, "Registrasi Berhasil!", Toast.LENGTH_SHORT).show();
+                                                finish();
+                                            }
                                     )
                                     .addOnFailureListener(e ->
                                             Toast.makeText(this, "Gagal menyimpan data pengguna", Toast.LENGTH_SHORT).show()

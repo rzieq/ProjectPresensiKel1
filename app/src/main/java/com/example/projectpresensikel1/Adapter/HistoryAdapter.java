@@ -35,8 +35,8 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.ViewHold
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Attendance attendance = attendanceList.get(position);
 
-        holder.nameTextView.setText(attendance.getName());
-        holder.statusTextView.setText("Status: " + attendance.getStatus());
+        holder.nameTextView.setText("Nama: " +attendance.getName());
+        holder.statusTextView.setText(attendance.getStatus());
         holder.locationTextView.setText("Lokasi: " + attendance.getLokasi());
         holder.timeTextView.setText("Waktu: " + attendance.getWaktuKehadiran());
 
